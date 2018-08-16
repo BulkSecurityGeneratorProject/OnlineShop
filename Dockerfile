@@ -1,14 +1,20 @@
-FROM openjdk:8-jdk-slim
-ENV PORT 8080
-ENV CLASSPATH /opt/lib
+FROM openjdk:8-jre-alpine
+
+ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
+    JHIPSTER_SLEEP=0 \
+    JAVA_OPTS="-Xms512m -Xmx768m -XX:MaxMetaspaceSize=512m -Xloggc:/tmp/gc.log -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp"
+
+# Add a jhipster user to run our application so that it doesn't need to run as root
+RUN adduser -D -s /bin/sh jhipster
+WORKDIR /home/jhipster
+
+ADD src/main/docker/entrypoint.sh entrypoint.sh
+RUN chmod 755 entrypoint.sh && chown jhipster:jhipster entrypoint.sh
+USER jhipster
+
+ADD target/*.war app.war
+
+ENTRYPOINT ["./entrypoint.sh"]
+
 EXPOSE 8080
 
-# copy pom.xml and wildcards to avoid this command failing if there's no target/lib directory
-COPY pom.xml target/lib* /opt/lib/
-
-# NOTE we assume there's only 1 jar in the target dir
-# but at least this means we don't have to guess the name
-# we could do with a better way to know the name - or to always create an app.jar or something
-COPY target/*.jar /opt/app.jar
-WORKDIR /opt
-CMD ["java", "-jar", "app.jar"]

@@ -19,8 +19,9 @@ pipeline {
         }
         steps {
           container('maven') {
+            sh "export MAVEN_OPTS=\"-Xmx2048m -XX:MaxPermSize=256m\""
             sh "mvn versions:set -DnewVersion=$PREVIEW_VERSION"
-            sh "mvn install"
+            sh "mvn -Pdev -Pwebpack install"
             sh 'export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml'
 
 
@@ -56,7 +57,8 @@ pipeline {
             }
           }
           container('maven') {
-            sh 'mvn clean deploy'
+            sh "export MAVEN_OPTS=\"-Xmx2048m -XX:MaxPermSize=256m\""
+            sh 'mvn -Pdev -Pwebpack clean deploy'
 
             sh 'export VERSION=`cat VERSION` && skaffold build -f skaffold.yaml'
 
@@ -89,8 +91,8 @@ pipeline {
             cleanWs()
         }
         failure {
-            input """Pipeline failed. 
-We will keep the build pod around to help you diagnose any failures. 
+            input """Pipeline failed.
+We will keep the build pod around to help you diagnose any failures.
 
 Select Proceed or Abort to terminate the build pod"""
         }
