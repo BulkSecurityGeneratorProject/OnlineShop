@@ -1,0 +1,25 @@
+
+{
+    "onlineShopApp": {
+        "wishlist" : {
+            "home": {
+                "title": "Wishlists",
+                "createLabel": "Egy új Wishlist létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Wishlistt"
+            },
+            "created": "Egy új Wishlist lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Wishlist módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Wishlist törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Wishlistt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Wishlist"
+            },
+            "title": "Title",
+            "restricted": "Restricted",
+            "product": "Product",
+            "customer": "Customer"
+        }
+    }
+}

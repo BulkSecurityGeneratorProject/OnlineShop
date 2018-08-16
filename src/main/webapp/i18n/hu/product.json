@@ -1,0 +1,29 @@
+
+{
+    "onlineShopApp": {
+        "product" : {
+            "home": {
+                "title": "Products",
+                "createLabel": "Egy új Product létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Productt"
+            },
+            "created": "Egy új Product lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Product módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Product törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Productt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Product"
+            },
+            "title": "Title",
+            "keywords": "Keywords",
+            "description": "Description",
+            "rating": "Rating",
+            "dateAdded": "Date Added",
+            "dateModified": "Date Modified",
+            "wishlist": "Wishlist",
+            "category": "Category"
+        }
+    }
+}

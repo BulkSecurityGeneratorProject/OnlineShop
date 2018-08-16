@@ -38,6 +38,16 @@ public class CacheConfiguration {
             cm.createCache(com.ge.capital.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.ge.capital.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.ge.capital.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Category.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Category.class.getName() + ".products", jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Product.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Product.class.getName() + ".categories", jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Customer.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Customer.class.getName() + ".addresses", jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Customer.class.getName() + ".whislists", jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Address.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Wishlist.class.getName(), jcacheConfiguration);
+            cm.createCache(com.ge.capital.domain.Wishlist.class.getName() + ".products", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

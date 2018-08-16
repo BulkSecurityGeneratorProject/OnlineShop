@@ -1,0 +1,28 @@
+
+{
+    "onlineShopApp": {
+        "category" : {
+            "home": {
+                "title": "Categories",
+                "createLabel": "Egy új Category létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Categoryt"
+            },
+            "created": "Egy új Category lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Category módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Category törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Categoryt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Category"
+            },
+            "description": "Description",
+            "sortOrder": "Sort Order",
+            "dateAdded": "Date Added",
+            "dateModified": "Date Modified",
+            "status": "Status",
+            "parent": "Parent",
+            "product": "Product"
+        }
+    }
+}

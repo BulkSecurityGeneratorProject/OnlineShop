@@ -1,0 +1,25 @@
+
+{
+    "onlineShopApp": {
+        "wishlist" : {
+            "home": {
+                "title": "Wishlists",
+                "createLabel": "नया Wishlist बनाएँ",
+                "createOrEditLabel": "Wishlist बनाएँ या संपादित करें"
+            },
+            "created": "एक नया Wishlist [identifier: {{ param }}] तैयार है",
+            "updated": "एक Wishlist [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Wishlist [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Wishlist [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Wishlist"
+            },
+            "title": "Title",
+            "restricted": "Restricted",
+            "product": "Product",
+            "customer": "Customer"
+        }
+    }
+}

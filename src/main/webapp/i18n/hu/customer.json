@@ -1,0 +1,27 @@
+
+{
+    "onlineShopApp": {
+        "customer" : {
+            "home": {
+                "title": "Customers",
+                "createLabel": "Egy új Customer létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Customert"
+            },
+            "created": "Egy új Customer lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Customer módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Customer törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Customert {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Customer"
+            },
+            "firstName": "First Name",
+            "lastName": "Last Name",
+            "email": "Email",
+            "telephone": "Telephone",
+            "address": "Address",
+            "whislist": "Whislist"
+        }
+    }
+}

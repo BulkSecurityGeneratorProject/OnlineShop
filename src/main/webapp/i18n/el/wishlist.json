@@ -1,0 +1,25 @@
+
+{
+    "onlineShopApp": {
+        "wishlist" : {
+            "home": {
+                "title": "Wishlists",
+                "createLabel": "Δημιουργήστε ένα νέο Wishlist",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Wishlist"
+            },
+            "created": "Ένα νέο Wishlist έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Wishlist έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Wishlist έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Wishlist {{ id }};"
+            },
+            "detail": {
+                "title": "Wishlist"
+            },
+            "title": "Title",
+            "restricted": "Restricted",
+            "product": "Product",
+            "customer": "Customer"
+        }
+    }
+}

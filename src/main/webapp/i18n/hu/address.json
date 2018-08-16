@@ -1,0 +1,27 @@
+
+{
+    "onlineShopApp": {
+        "address" : {
+            "home": {
+                "title": "Addresses",
+                "createLabel": "Egy új Address létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Addresst"
+            },
+            "created": "Egy új Address lett létrehozva {{ param }} azonosítóval",
+            "updated": "A Address módosítva lett {{ param }} azonosítóval",
+            "deleted": "A Address törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Addresst {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Address"
+            },
+            "address1": "Address 1",
+            "address2": "Address 2",
+            "city": "City",
+            "postcode": "Postcode",
+            "country": "Country",
+            "customer": "Customer"
+        }
+    }
+}
